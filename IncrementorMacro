@@ -1,13 +1,13 @@
 sub threesixty ()
-Dim r as Long, endRow As Long, pasteRowIndex As Long
+Dim r As Long, endRow As Long, pasteRowIndex As Long
 Dim fullturncount As Double
-full turncount = 0
+fullturncount = 0
 degreesinonefullturn=360
 endRow=100000
 For r=1 to endRow
-cells (r, columns ("G").Column).value=
+cells (r, columns ("G").column).value=
 cells (r, columns ("C").column).value+(fullturncount x degreesinonefullturn)
-If cells (r, columns ("c").column).value>cells (r + 1, columns ("c").column).value then fullturncount=fullturncount+1
+If cells (r, columns ("C").column).value>cells (r + 1, columns ("c").column).value then fullturncount=fullturncount+1
 End If
 Next r
 End Sub
